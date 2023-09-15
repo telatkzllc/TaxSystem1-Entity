@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D84B6086-8E79-4083-B993-61B85BA136D0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_20._08._2023entitydbfirst</RootNamespace>
+    <AssemblyName>20.08.2023entitydbfirst</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adresegore_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bakan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bakan.Designer.cs">
+      <DependentUpon>Bakan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bakanlık.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="baklist_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="berke_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="bknmrkzortalama_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gruplama_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="innervatandas_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MerkezeGoreSıra_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MerkezeGore_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seyit_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition1_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams1_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="telonew_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="telo_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vatanda.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vatandas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vatandas.Designer.cs">
+      <DependentUpon>Vatandas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vatlist_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vergi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vergi.Designer.cs">
+      <DependentUpon>Vergi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vergiler.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vergiler.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vergiler.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vergiler.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vergiler.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Vergiler1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="verinner_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="verlist_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <Compile Include="versırala_Result.cs">
+      <DependentUpon>Vergiler.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Bakan.resx">
+      <DependentUpon>Bakan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vatandas.resx">
+      <DependentUpon>Vatandas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vergi.resx">
+      <DependentUpon>Vergi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="Vergiler.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Vergiler.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Vergiler.edmx.diagram">
+      <DependentUpon>Vergiler.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Vergiler.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Vergiler.Context.cs</LastGenOutput>
+      <DependentUpon>Vergiler.edmx</DependentUpon>
+    </Content>
+    <Content Include="Vergiler.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Vergiler.edmx</DependentUpon>
+      <LastGenOutput>Vergiler1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
